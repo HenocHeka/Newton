@@ -14,7 +14,7 @@ def Newton_Raphson(x0, eps):
     i = 0  # le compteur qui nous fera connaitre le nombre d'iteration
     x = x0  # on initialise la premiere racine par sa valeur par defaut introduit par l'utilisateur
     if (fonction_derivee(x) == 0):
-        return print('la fonction derivée n\'est pas être nulle ')
+        return print('la fonction derivée ne  peut pas être nulle ')
     xn = x - fonction(x0) / fonction_derivee(x0)  # on calcule la premiere iteration soit x1
 
     # NB: xn :  etant la racine suivante et x : etant la racine précédente, le critère d'arret est : | xn - x | < Epsilon
